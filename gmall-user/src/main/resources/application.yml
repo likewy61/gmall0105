@@ -1,0 +1,20 @@
+
+server:
+  port: 8080
+
+
+spring:
+  datasource:
+    password: 123456
+    username: root
+    url: jdbc:mysql://localhost:3306/gmall?characterEncoding=UTF-8&useSSL=false
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+logging:
+  level: info
